@@ -5,9 +5,10 @@
 }
 .sidebar{
     background-color: rgb(172, 165, 165);
-   width: 234px;
+    position: absolute;
      font-family: "Roboto", sans-serif;
      height: 100vh;
+     transition: transform 0.3s ease-in;
 }
 .sidebar nav{
     padding: 42px;
@@ -44,18 +45,18 @@
      font-family: "Source Code Pro", monospace;
 }
 .hello{
-    font-size: 55px;
+    font-size: 3em;
 }
 .name{
-    font-size: 50px;
+    font-size: 3em;
     font-weight: bold;
      font-family: "Roboto", sans-serif;
 }
 .about{
-    font-size: 15px;
+    font-size:2.5em;
 }
 .buttons{
-    margin-top: 34px;
+    margin-top: 2.5em;
 }
 .btn{
     cursor: pointer;
@@ -63,7 +64,7 @@
     color: white;
     background-color: dodgerblue;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 1em;
     border-radius: 22px;
     margin: 0 3px;
      transition: ease-in-out;   
@@ -84,8 +85,9 @@
 }
 .contactform{
     padding: 0 34px;
-    padding-top: 144px;
+    padding-top: 44px;
       font-family: "Roboto", sans-serif;
+      margin: 0 88px;
 }
 .contactform h1{
  font-family: "Source Code Pro", monospace;
@@ -120,6 +122,9 @@
     margin: 20px;
     font-family: "Roboto", sans-serif;
 }
+.blogContainer{
+    margin: 60px;
+}
 h1{
     margin: 23px;
     font-family: "Roboto", sans-serif;
@@ -127,6 +132,9 @@ h1{
 p{
     margin: 20px;
      font-family: "Source Code Pro", monospace;
+}
+.intro{
+    margin: 88px;
 }
 .intro h2{
  font-family: "Roboto", sans-serif;
@@ -163,12 +171,27 @@ p{
     width: 75px;
     background-color: black;
 }
-@media (max-width: 1200px) {
-    /* *{
-        background-color: pink;
-    } */
-    .sidebar{
+   .sidebarGo{
         transform: translate(-443px , 0px);
         position: absolute;
     }
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
 }
+.cross{
+    margin-left: 120px;
+}
+
+@media (max-width: 1200px) {
+   
+     .devPic{
+        display: none;
+     }
+     .intro, .blogContainer, .contactform{
+        margin: 8px;
+     }
+   
+} 
